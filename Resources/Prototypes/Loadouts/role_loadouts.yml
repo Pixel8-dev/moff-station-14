@@ -7,8 +7,10 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - CaptainEyewear # Moffstation - Eyepatches!
   - Survival
   - Trinkets
+  - CaptainJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -21,9 +23,11 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
-  - Glasses
+# - Glasses # Moffstation - Eyepatches!
+  - HopEyewear # Moffstation - Eyepatches!
   - Survival
   - Trinkets
+  - HoPJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -43,6 +47,7 @@
   id: JobPassenger
   groups:
   - GroupTankHarness
+  - PassengerPDA # Moffstation - Additional job title loadouts
   - PassengerJumpsuit
   - CommonBackpack
   - PassengerNeck
@@ -53,6 +58,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - PassengerJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -60,13 +66,16 @@
   id: JobBartender
   groups:
   - GroupTankHarness
+  - BartenderPDA # Moffstation - Additional job title loadouts
   - BartenderHead
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
-  - Glasses
+# - Glasses # Moffstation - Eyepatches!
+  - BartenderEyewear # Moffstation - Eyepatches!
   - Survival
   - Trinkets
+  - BartenderJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -74,11 +83,13 @@
   id: JobServiceWorker
   groups:
   - GroupTankHarness
+  - ServiceWorkerPDA # Moffstation - Additional job title loadouts
   - BartenderJumpsuit
   - CommonBackpack
   - Glasses
   - Survival
   - Trinkets
+  - ServiceWorkerJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -86,6 +97,7 @@
   id: JobChef
   groups:
   - GroupTankHarness
+  - ChefPDA # Moffstation - Additional job title loadouts
   - ChefHead
   - ChefMask
   - ChefJumpsuit
@@ -94,6 +106,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - ChefJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -101,11 +114,13 @@
   id: JobLibrarian
   groups:
   - GroupTankHarness
+  - LibrarianPDA # Moffstation - Additional job title loadouts
   - LibrarianJumpsuit
   - CommonBackpack
   - Glasses
   - Survival
   - Trinkets
+  - LibrarianJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -113,12 +128,14 @@
   id: JobLawyer
   groups:
   - GroupTankHarness
+  - LawyerPDA # Moffstation - Additional job title loadouts
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
   - Glasses
   - Survival
   - Trinkets
+  - LawyerJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -126,6 +143,7 @@
   id: JobChaplain
   groups:
   - GroupTankHarness
+  - ChaplainPDA # Moffstation - Additional job title loadouts
   - ChaplainHead
   - ChaplainMask
   - ChaplainNeck
@@ -136,6 +154,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - ChaplainJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -143,6 +162,7 @@
   id: JobJanitor
   groups:
   - GroupTankHarness
+  - JanitorPDA # Moffstation - Additional job title loadouts
   - JanitorHead
   - JanitorJumpsuit
   - JanitorGloves
@@ -151,7 +171,7 @@
   - Glasses
   - Survival
   - Trinkets
-  - JanitorPlunger
+  - JanitorJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -159,6 +179,7 @@
   id: JobBotanist
   groups:
   - GroupTankHarness
+  - BotanistPDA # Moffstation - Additional job title loadouts
   - BotanistHead
   - BotanistJumpsuit
   - BotanistBackpack
@@ -166,6 +187,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - BotanistJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -174,6 +196,7 @@
   canCustomizeName: true
   groups:
   - GroupTankHarness
+  - ClownPDA # Moffstation - Additional job title loadouts
   - ClownHead
   - ClownJumpsuit
   - ClownBackpack
@@ -182,6 +205,7 @@
   - Glasses
   - SurvivalClown
   - Trinkets
+  - ClownJobTrinkets
   - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
@@ -189,6 +213,7 @@
   canCustomizeName: true
   groups:
   - GroupTankHarness
+  - MimePDA # Moffstation - Additional job title loadouts
   - MimeHead
   - MimeMask
   - MimeJumpsuit
@@ -198,22 +223,25 @@
   - Glasses
   - SurvivalMime
   - Trinkets
+  - MimeJobTrinkets
   - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobMusician
+  canCustomizeName: true
   groups:
   - GroupTankHarness
+  - MusicianPDA # Moffstation - Additional job title loadouts
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
   - Glasses
   - Survival
   - Trinkets
+  - MusicianJobTrinkets
   - Instruments
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
-  canCustomizeName: true # Moffstation - Musicians can select a name in loadout
 
 # Cargo
 - type: roleLoadout
@@ -229,6 +257,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - QuartermasterJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -236,15 +265,17 @@
   id: JobCargoTechnician
   groups:
   - GroupTankHarness
+  - CargoTechnicianID # Moffstation - Additional job title loadouts
   - CargoTechnicianHead
   - CargoTechnicianJumpsuit
   - CargoTechnicianBackpack
   - CargoTechnicianOuterClothing
   - CargoTechnicianShoes
-  - CargoTechnicianID
+# - CargoTechnicianID # Moffstation - Moved up in list
   - Glasses
   - Survival
   - Trinkets
+  - CargoTechnicianJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -252,12 +283,14 @@
   id: JobSalvageSpecialist
   groups:
   - GroupTankHarness
+  - SalvagePDA # Moffstation - Additional job title loadouts
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
   - Glasses
   - Survival
   - Trinkets
+  - SalvageSpecialistJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -272,8 +305,10 @@
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
+  - EngineeringEyewear # Moffstation - Eyepatches!
   - SurvivalExtended
   - Trinkets
+  - ChiefEngineerJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -285,6 +320,7 @@
   - StationEngineerBackpack
   - SurvivalExtended
   - Trinkets
+  - TechnicalAssistantJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -292,14 +328,17 @@
   id: JobStationEngineer
   groups:
   - GroupTankHarness
+  - StationEngineerID # Moffstation - Additional job title loadouts
   - StationEngineerHead
   - StationEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing
   - StationEngineerShoes
-  - StationEngineerID
+#  - StationEngineerID # Moffstation - Moved up in list
+  - EngineeringEyewear # Moffstation - Eyepatches!
   - SurvivalExtended
   - Trinkets
+  - StationEngineerJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -307,13 +346,16 @@
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
-  - StationEngineerHead # Moffstation - (Nox Loadout Improvements)
+  - AtmosPDA # Moffstation - Additional job title loadouts
+  - AtmosphericTechnicianHead # Moffstation - (Work Gear for Atmos) - This contains their new hardhats.
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
   - AtmosphericTechnicianShoes
+  - EngineeringEyewear # Moffstation - Eyepatches!
   - SurvivalExtended
   - Trinkets
+  - AtmosphericTechnicianJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -329,9 +371,11 @@
   - ResearchDirectorOuterClothing
   - ScientistGloves
   - ResearchDirectorShoes
-  - Glasses
+# - Glasses # Moffstation - Eyepatches!
+  - ScienceEyewear # Moffstation - Eyepatches!
   - Survival
   - Trinkets
+  - ResearchDirectorJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -339,6 +383,7 @@
   id: JobScientist
   groups:
   - GroupTankHarness
+  - ScientistPDA # Moffstation - Additional job title loadouts
   - ScientistHead
   - ScientistNeck
   - ScientistJumpsuit
@@ -346,10 +391,12 @@
   - ScientistOuterClothing
   - ScientistGloves
   - ScientistShoes
-  - ScientistPDA
-  - Glasses
+# - ScientistPDA # Moffstation - Moved up in list
+# - Glasses # Moffstation - Eyepatches!
+  - ScienceEyewear # Moffstation - Eyepatches!
   - Survival
   - Trinkets
+  - ScientistJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -362,6 +409,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - ResearchAssistantJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -376,56 +424,64 @@
   - SecurityBelt
   - HeadofSecurityOuterClothing
   - SecurityShoes
+  - SecurityEyewear # Moffstation - Eyepatches!
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+  - HeadofSecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
   - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobWarden
   groups:
+  - WardenPDA # Moffstation - Additional job title loadouts
   - WardenHead
   - WardenJumpsuit
   - SecurityBackpack
   - SecurityBelt
   - WardenOuterClothing
   - SecurityShoes
+  - SecurityEyewear # Moffstation - Eyepatches!
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+  - WardenJobTrinkets
   - GroupSpeciesBreathToolSecurity
   - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
+  - SecurityPDA # Moffstation - Additional job title loadouts
   - SecurityHead
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
   - SecurityShoes
-  - SecurityPDA
+# - SecurityPDA # Moffstation - Moved up in list
   - SecurityBelt
+  - SecurityEyewear # Moffstation - Eyepatches!
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+  - SecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
   - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobDetective
   groups:
+  - DetectivePDA # Moffstation - Additional job title loadouts
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing
-  - SecurityBelt # Moffstation - (Nox Loadout Improvements)
+  - DetectiveBelt # Moffstation - Detective loadout changes
   - SecurityShoes
+  - DetectiveEyewear # Moffstation - Eyepatches!
+  - DetectiveSidearm # Moffstation - (PM Pistol) - With the new PM, detective needs a loadout to select which sidearm they want.
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+  - DetectiveJobTrinkets
   - GroupSpeciesBreathToolSecurity
   - PersonalItemsJobAgnostic # Umbra
 
@@ -436,6 +492,7 @@
   - SecurityBackpack
   - SurvivalSecurity
   - Trinkets
+  - SecurityCadetJobTrinkets
   - GroupSpeciesBreathToolSecurity
   - PersonalItemsJobAgnostic # Umbra
 
@@ -452,9 +509,11 @@
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
-  - MedicalEyewear
+# - MedicalEyewear
+  - ChemistryEyewear # Moffstation - Eyepatches!
   - SurvivalMedical
   - Trinkets
+  - ChiefMedicalOfficerJobTrinkets
   - GroupSpeciesBreathToolMedical
   - PersonalItemsJobAgnostic # Umbra
 
@@ -462,6 +521,7 @@
   id: JobMedicalDoctor
   groups:
   - GroupTankHarness
+  - MedicalDoctorPDA # Moffstation - Additional job title loadouts
   - MedicalDoctorHead
   - MedicalMask
   - MedicalDoctorJumpsuit
@@ -469,10 +529,11 @@
   - MedicalBackpack
   - MedicalDoctorOuterClothing
   - MedicalShoes
-  - MedicalDoctorPDA
+# - MedicalDoctorPDA # Moffstation - Moved up in list for title loadouts
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - MedicalDoctorJobTrinkets
   - GroupSpeciesBreathToolMedical
   - PersonalItemsJobAgnostic # Umbra
 
@@ -485,6 +546,7 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - MedicalInternJobTrinkets
   - GroupSpeciesBreathToolMedical
   - PersonalItemsJobAgnostic # Umbra
 
@@ -492,14 +554,17 @@
   id: JobChemist
   groups:
   - GroupTankHarness
+  - ChemistryPDA # Moffstation - Additional job title loadouts
   - MedicalMask
   - ChemistJumpsuit
   - MedicalGloves
   - ChemistBackpack
   - ChemistOuterClothing
   - MedicalShoes
+  - ChemistryEyewear # Moffstation - Eyepatches!
   - SurvivalMedical
   - Trinkets
+  - ChemistJobTrinkets
   - GroupSpeciesBreathToolMedical
   - PersonalItemsJobAgnostic # Umbra
 
@@ -507,6 +572,7 @@
   id: JobParamedic
   groups:
   - GroupTankHarness
+  - ParamedicPDA # Moffstation - Additional job title loadouts
   - ParamedicHead
   - MedicalMask
   - ParamedicJumpsuit
@@ -517,6 +583,7 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - ParamedicJobTrinkets
   - GroupSpeciesBreathToolMedical
   - PersonalItemsJobAgnostic # Umbra
 
@@ -529,6 +596,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - ZookeeperJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -536,11 +604,13 @@
   id: JobReporter
   groups:
   - GroupTankHarness
+  - ReporterPDA # Moffstation - Additional job title loadouts
   - ReporterJumpsuit
   - CommonBackpack
   - Glasses
   - Survival
   - Trinkets
+  - ReporterJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -548,11 +618,13 @@
   id: JobPsychologist
   groups:
   - GroupTankHarness
+  - PsychologistPDA # Moffstation - Additional job title loadouts
   - PsychologistJumpsuit
   - MedicalBackpack
   - Glasses
   - Survival
   - Trinkets
+  - PsychologistJobTrinkets
   - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
@@ -566,6 +638,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - BoxerJobTrinkets
   - PersonalItemsJobAgnostic # Umbra
   - GroupSpeciesBreathTool
 

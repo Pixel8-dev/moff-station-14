@@ -5,10 +5,22 @@
     count: 8
 
 - type: localizedDataset
+  id: FigurinesAsher
+  values:
+    prefix: figurines-asher-
+    count: 15
+
+- type: localizedDataset
   id: FigurinesAudrina
   values:
     prefix: figurines-audrina-
     count: 6
+
+- type: localizedDataset
+  id: FigurinesAurora
+  values:
+    prefix: figurines-aurora-
+    count: 15
 
 - type: localizedDataset
   id: FigurinesAwana
@@ -51,6 +63,12 @@
   values:
     prefix: figurines-brisbanebighat-
     count: 5
+
+- type: localizedDataset
+  id: FigurinesCamilla
+  values:
+    prefix: figurines-camilla-
+    count: 9
 
 - type: localizedDataset
   id: FigurinesCassiel
@@ -185,6 +203,12 @@
     count: 6
 
 - type: localizedDataset
+  id: FigurinesJessGerr
+  values:
+    prefix: figurines-jessgerr-
+    count: 11
+
+- type: localizedDataset
   id: FigurinesJobs
   values:
     prefix: figurines-jobs-
@@ -206,7 +230,7 @@
   id: FigurinesKatie
   values:
     prefix: figurines-katie-
-    count: 5
+    count: 4
 
 - type: localizedDataset
   id: FigurinesKaza
@@ -333,6 +357,12 @@
   values:
     prefix: figurines-samantha-
     count: 5
+
+- type: localizedDataset
+  id: FigurinesSaprophyte
+  values:
+    prefix: figurines-saprophyte-
+    count: 10
 
 - type: localizedDataset
   id: FigurinesSawa

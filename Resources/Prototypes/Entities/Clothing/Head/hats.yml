@@ -139,7 +139,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretQM
   name: quartermaster's beret
-  description: A beret with the cargo department's insignia. For quartermasters that are more inclined towards style.
+  description: A beret with the cargo department's insignia.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/beret_qm.rsi
@@ -273,9 +273,9 @@
   description: Feels good being the king.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/captain.rsi
+    sprite: _Moffstation/Clothing/Head/Hats/captain.rsi # Moffstation - Command Outfit Resprite
   - type: Clothing
-    sprite: Clothing/Head/Hats/captain.rsi
+    sprite: _Moffstation/Clothing/Head/Hats/captain.rsi # Moffstation - Command Outfit Resprite
   - type: Tag
     tags:
     - PetWearable
@@ -420,7 +420,7 @@
   parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatHoshat
   name: head of security cap
-  description: The robust standard-issue cap of the Head of Security. For showing the officers who's in charge.
+  description: A stylish cap worn by the Head of Security. Shows the officers who's in charge.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/hoshat.rsi
@@ -497,6 +497,8 @@
     tags:
     - PetWearable
     - CorgiWearable
+  - type: AddAccentClothing #Moffstation - Adding pirate accent
+    accent: PirateAccent #Moffstation - Adding pirate accent
 
 - type: entity
   parent: ClothingHeadBase
@@ -564,6 +566,8 @@
     - state: icon-nobeard
       map: [ "foldedLayer" ]
       visible: true
+  - type: Item
+    storedRotation: 0
   - type: Tag
     tags:
     - PetWearable
@@ -1045,6 +1049,8 @@
     sprite: Clothing/Head/Hats/piratetricord.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/piratetricord.rsi
+  - type: AddAccentClothing #Moffstation - Adding pirate accent
+    accent: PirateAccent #Moffstation - Adding pirate accent
 
 - type: entity
   parent: ClothingHeadBase
@@ -1164,11 +1170,11 @@
   description: A grand, stylish cap worn by the Captain. Shows the station who's in charge.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/capcap.rsi
+    sprite: _Moffstation/Clothing/Head/Hats/capcap.rsi # Moffstation - Command Outfit Resprite
   - type: Clothing
-    sprite: Clothing/Head/Hats/capcap.rsi
+    sprite: _Moffstation/Clothing/Head/Hats/capcap.rsi # Moffstation - Command Outfit Resprite
   - type: Item
-    sprite: Clothing/Head/Hats/capcap.rsi
+    sprite: _Moffstation/Clothing/Head/Hats/capcap.rsi # Moffstation - Command Outfit Resprite
   - type: Tag
     tags:
     - PetWearable
@@ -1229,6 +1235,8 @@
     sprite: Clothing/Head/Hats/party_red.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/party_red.rsi
+  - type: Item
+    storedRotation: 0
   - type: Tag
     tags:
     - PetWearable
@@ -1245,12 +1253,6 @@
     sprite: Clothing/Head/Hats/party_yellow.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/party_yellow.rsi
-  - type: Tag
-    tags:
-    - PetWearable
-    - CorgiWearable
-    - WhitelistChameleon
-    - HamsterWearable
 
 - type: entity
   parent: ClothingHeadHatPartyRed
@@ -1261,12 +1263,6 @@
     sprite: Clothing/Head/Hats/party_green.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/party_green.rsi
-  - type: Tag
-    tags:
-    - PetWearable
-    - CorgiWearable
-    - WhitelistChameleon
-    - HamsterWearable
 
 - type: entity
   parent: ClothingHeadHatPartyRed
@@ -1277,12 +1273,6 @@
     sprite: Clothing/Head/Hats/party_blue.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/party_blue.rsi
-  - type: Tag
-    tags:
-    - PetWearable
-    - CorgiWearable
-    - WhitelistChameleon
-    - HamsterWearable
 
 - type: entity
   parent: ClothingHeadHatPartyRed

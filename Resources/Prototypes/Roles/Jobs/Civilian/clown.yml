@@ -17,8 +17,7 @@
         types: #literally just picked semi random valus. i tested this once and tweaked it.
           Blunt: 5
           Piercing: 4
-        groups:
-          Burn: 3
+          Heat: 3
       catchingFailDamage:
         types:
           Blunt: 1
@@ -34,7 +33,7 @@
     mask: ClothingMaskClown
     pocket1: BikeHorn
     pocket2: ClownRecorder
-    id: ClownPDA
+#    id: ClownPDA # Moffstation - PDA loadouts
     ears: ClothingHeadsetService
   storage:
     back:

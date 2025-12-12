@@ -8,6 +8,7 @@ construction-graph-tag-clown-bike-horn = bike horn
 construction-graph-tag-clowne-horn = broken bike horn
 construction-graph-tag-happy-honk-meal = happy honk meal
 construction-graph-tag-woeful-cluwne-meal = woeful cluwne meal
+construction-graph-tag-boxhug = a box of hugs
 
 # mime
 construction-graph-tag-suspenders = suspenders
@@ -32,9 +33,9 @@ construction-graph-tag-sun-glasses = sun glasses
 construction-graph-tag-security-helmet = security helmet
 
 # materials
-#moffstation - Revert machine parts - Start
-construction-graph-tag-capacitor = capacitor
-#moffstation - Revert machine parts - End
+# Moffstation - Begin - Revert machine parts
+# construction-graph-tag-manipulator = modular machine part
+# Moffstation - End
 construction-graph-tag-voice-trigger = a voice trigger
 construction-graph-tag-signal-trigger = a signal trigger
 construction-graph-tag-proximity-sensor = proximity sensor
@@ -105,6 +106,7 @@ construction-graph-tag-ripley-peripherals-control-module = ripley peripherals co
 construction-graph-tag-door-electronics-circuit-board = door electronics circuit board
 construction-graph-tag-firelock-electronics-circuit-board = firelock electronics circuit board
 construction-graph-tag-conveyor-belt-assembly = conveyor belt assembly
+construction-graph-tag-station-ai-core-electronics = station AI core electronics
 
 # tools
 construction-graph-tag-multitool = a multitool
