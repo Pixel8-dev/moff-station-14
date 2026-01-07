@@ -1,0 +1,32 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+                Title="{Loc 'surveillance-camera-monitor-ui-window'}"
+                SetSize="648 648"
+                MinSize="256 256">
+    <PanelContainer StyleClasses="BackgroundDark" Name="AdminCameraWindowRoot" Access="Public">
+
+        <BoxContainer Orientation="Vertical" Access="Public">
+
+            <Control VerticalExpand="True" Name="CameraViewBox">
+<!--            TODO: Figure this out ("o_ o)
+                <viewport:ScalingViewport Name="CameraView"
+                                          MinSize="100 100"
+                                          MouseFilter="Ignore" />
+-->
+
+            <TextureRect VerticalExpand="True" HorizontalExpand="True" MinSize="500 500" Name="CameraViewBackground" />
+
+            </Control>
+
+            <BoxContainer Orientation="Horizontal" Margin="5 5 5 5">
+                <LineEdit Name="XPositionEdit" Access="Public" HorizontalExpand="True" PlaceHolder="{Loc 'ui-transfer-amount-line-edit-placeholder'}"/>
+                <LineEdit Name="YPositionEdit" Access="Public" HorizontalExpand="True" PlaceHolder="{Loc 'ui-transfer-amount-line-edit-placeholder'}"/>
+            </BoxContainer>
+            <BoxContainer Orientation="Horizontal" Margin="5 5 5 5">
+                <Button StyleClasses="OpenRight" Name="UpdateButton" HorizontalExpand="True" Access="Public" Text="{Loc 'admin-camera-window-follow'}" />
+                <Button StyleClasses="OpenLeft" Name="TeleportButton" HorizontalExpand="True" Access="Public" Text="{Loc 'admin-camera-window-pop-out'}" />
+            </BoxContainer>
+
+        </BoxContainer>
+
+    </PanelContainer>
+</DefaultWindow>
