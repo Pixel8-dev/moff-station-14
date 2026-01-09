@@ -2221,7 +2221,7 @@ entities:
     - type: Transform
       pos: -0.5,-0.5
       parent: 2
-- proto: SpawnPointPassenger
+- proto: SpawnPointClockworkCult
   entities:
   - uid: 369
     components:

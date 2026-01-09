@@ -12,7 +12,8 @@
 - type: startingGear
   id: JobClockCult
   equipment:
-    jumpsuit: ClothingUniformClockwork
+    jumpsuit: ClothingUniformJumpsuitColorLightBrown
+    outerClothing: ClothingOuterRobesClockwork
     back: ClothingBackpackChameleon
     shoes: ClothingShoesClockwork
     id: AgentIDCard

@@ -1,0 +1,11 @@
+# Clockcult stuff
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterRobesClockwork
+  name: clockwork robes
+  description: Robes to wear while worshiping the greater of two evils.
+  components:
+  - type: Sprite
+    sprite: _Moffstation/Clothing/OuterClothing/Misc/clockcult.rsi
+  - type: Clothing
+    sprite: _Moffstation/Clothing/OuterClothing/Misc/clockcult.rsi

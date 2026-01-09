@@ -4,15 +4,20 @@
   components:
   - type: GameRule
     minPlayers: 25
+    cancelPresetOnTooFewPlayers: false
   - type: LoadAbsentMapRule
     mapPath: /Maps/_Moffstation/Nonstations/clockwork.yml
     mapName: "City of Cogs"
   - type: ClockworkCultRule
   - type: AntagSelection
-    selectionTime: IntraPlayerSpawn
+    selectionTime: PrePlayerSpawn
     definitions:
     - prefRoles: [ ClockworkCult ]
-      max: 1
+      spawnerPrototype: SpawnPointGhostClockworkCult
+      startingGear: JobClockCult
+      min: 1
+      max: 4
+      #playerRatio: 10
       briefing:
         text: clockcult-briefing
         color: SandyBrown
