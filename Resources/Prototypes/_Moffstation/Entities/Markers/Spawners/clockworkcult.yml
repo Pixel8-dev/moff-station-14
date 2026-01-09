@@ -1,0 +1,40 @@
+- type: entity
+  categories: [ HideSpawnMenu, Spawner ]
+  id: SpawnPointGhostClockworkCult
+  name: ghost role spawn point
+  parent: MarkerBase
+  components:
+  - type: GhostRole
+    name: roles-antag-clockcultist-name
+    description: roles-antag-clockcultist-objective
+    rules: ghost-role-information-rules-default-team-antagonist
+    mindRoles:
+    - MindRoleClockworkCultist
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: MobHumanNukeOp
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+      - sprite: Structures/Wallmounts/signs.rsi
+        state: radiation
+
+- type: entity
+  categories: [ HideSpawnMenu, Spawner ]
+  parent: BaseAntagSpawner
+  id: SpawnerClockworkCult
+  components:
+  - type: GhostRole
+    name: roles-antag-clockcultist-name
+    description: roles-antag-clockcultist-objective
+    rules: ghost-role-information-rules-default-team-antagonist
+    mindRoles:
+    - MindRoleClockworkCultist
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+      - sprite: Structures/Wallmounts/signs.rsi
+        state: radiation

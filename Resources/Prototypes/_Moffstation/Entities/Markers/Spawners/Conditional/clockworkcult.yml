@@ -1,0 +1,11 @@
+- type: entity
+  id: SpawnPointClockworkCult
+  parent: MarkerBase
+  name: Clockwork Cult spawn point
+  components:
+  - type: SpawnPoint
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Structures/Walls/clock.rsi
+        state: wall_gear
