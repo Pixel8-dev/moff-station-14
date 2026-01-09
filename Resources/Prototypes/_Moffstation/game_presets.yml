@@ -38,3 +38,21 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
+
+- type: gamePreset
+  id: ClockworkCult
+  alias:
+  - clockworkcult
+  - clockcult
+  - cc
+  name: clockcult-title
+  description: clockcult-description
+  showInVote: false
+  rules:
+  - DummyNonAntagChance
+  - ClockworkCult
+  - SubGamemodesRuleNoWizard
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation

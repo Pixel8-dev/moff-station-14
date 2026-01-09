@@ -1,0 +1,21 @@
+- type: antag
+  id: ClockCult
+  name: roles-antag-clockcultist-name
+#  antagonist: true #Commented out until it's game ready
+#  setPreference: true
+  objective: roles-antag-clockcultist-objective
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 36000 # 10h
+  guides: [ ClockCult ]
+
+- type: startingGear
+  id: JobClockCult
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorLightBrown
+    outerClothing: ClothingOuterRobesClockwork
+    back: ClothingBackpackChameleon
+    shoes: ClothingShoesClockwork
+    id: AgentIDCard
+    head: ClothingHeadHatHoodClockwork
+    pocket1: ClockworkSlab

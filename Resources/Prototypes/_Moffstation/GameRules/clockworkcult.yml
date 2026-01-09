@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseGameRule
+  id: ClockworkCult
+  components:
+  - type: GameRule
+    minPlayers: 25
+    cancelPresetOnTooFewPlayers: false
+  - type: LoadAbsentMapRule
+    mapPath: /Maps/_Moffstation/Nonstations/clockwork.yml
+    mapName: "City of Cogs"
+  - type: ClockworkCultRule
+  - type: AntagSelection
+    selectionTime: PrePlayerSpawn
+    definitions:
+    - prefRoles: [ ClockworkCult ]
+      spawnerPrototype: SpawnPointGhostClockworkCult
+      startingGear: JobClockCult
+      min: 1
+      max: 4
+      #playerRatio: 10
+      briefing:
+        text: clockcult-briefing
+        color: SandyBrown
+        sound: "/Audio/Ambience/Antag/traitor_wawa.ogg"
+      lateJoinAdditional: true
+      allowNonHumans: true
+      components:
+      - type: ClockworkCult
+      mindRoles:
+      - MindRoleClockworkCultist
