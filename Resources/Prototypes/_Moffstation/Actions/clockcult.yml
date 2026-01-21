@@ -31,8 +31,8 @@
     sound: !type:SoundPathSpecifier
       path: /Audio/Magic/fireball.ogg
     icon:
-      sprite: Objects/Magic/magicactions.rsi
-      state: fireball
+      sprite: _Moffstation/Objects/Magic/magicactions.rsi
+      state: abscond
   - type: InstantAction
     event: !type:ClockworkAbscondActionEvent
   - type: SpeakOnAction
