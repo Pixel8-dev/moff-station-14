@@ -36,4 +36,4 @@
   - type: InstantAction
     event: !type:ClockworkAbscondActionEvent
   - type: SpeakOnAction
-    sentence: action-speech-spell-kindle
+    sentence: action-speech-spell-abscond

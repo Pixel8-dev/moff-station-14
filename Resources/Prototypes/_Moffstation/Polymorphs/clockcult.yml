@@ -1,0 +1,11 @@
+# Used for the invisble teleportation to the station
+- type: polymorph
+  id: ClockworkTeleport
+  configuration:
+    entity: RatvarHolo
+    forced: false
+    transferName: false
+    inventory: None
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 120 # to stop people from just staying in the invisible state
