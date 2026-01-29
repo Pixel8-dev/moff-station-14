@@ -20,3 +20,22 @@
     - WirePanels
     - Airlocks
     - InspectingPower
+
+- type: entity
+  parent: BaseItem
+  id: DebugRemoteSignaller
+  name: debug remote
+  description: A handheld device used for remotely sending signals to objects within a small radius of about 15 meters.
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/signaller.rsi
+    state: signaller
+  - type: TriggerOnActivate
+  - type: UseDelayOnTrigger
+  - type: UseDelayTriggerCondition
+  - type: UseDelay
+  - type: PolymorphOnTrigger
+    targetUser: true
+    polymorph: ClockworkTeleport
+  - type: StaticPrice
+    price: 40
