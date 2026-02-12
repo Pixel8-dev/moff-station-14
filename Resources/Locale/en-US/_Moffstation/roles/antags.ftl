@@ -105,3 +105,4 @@ clockcult-briefing =
     Tybel gb Ratvar!
 
 guide-entry-clockcult = Clockwork Cultists
+guide-entry-clockcult = Clockwork Cultists
