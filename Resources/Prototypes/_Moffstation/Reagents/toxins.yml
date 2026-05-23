@@ -1,0 +1,185 @@
+# Just a wee bit complex, nothing too bad (lying)
+- type: reagent
+  id: Burzium
+  name: reagent-name-moff-burzium
+  group: Toxins
+  desc: reagent-desc-moff-burzium
+  flavor: bitter
+  color: "#227722"
+  physicalDesc: reagent-physical-desc-opaque
+  contrabandSeverity: Major
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      #   Non-Slimeperson Tick Effects
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+          inverted: true
+        damage:
+          types:
+            Poison: 0.05
+      #   Slimeperson Tick Effects
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+        damage:
+          types:
+            Caustic: 0.02
+      - !type:AdjustReagent
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+        - !type:ReagentCondition
+          reagent: Burzium
+          max: 50
+        reagent: Burzium
+        amount: 0.4
+      #   Messages
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Burzium
+          min: 42.5
+          max: 42.69 #nice
+        type: Local
+        messages:
+        - burzium-effect-light
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Burzium
+          min: 45
+          max: 45.19
+        type: Local
+        visualType: medium
+        messages:
+        - burzium-effect-medium
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Burzium
+          min: 47.5
+          max: 47.69 #nice
+        type: Local
+        visualType: Large
+        messages:
+        - burzium-effect-heavy
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Burzium
+          min: 50
+        type: Local
+        visualType: LargeCaution
+        messages:
+        - burzium-effect-burst
+      #   Bubble "Popping" Effect
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Burzium
+          min: 50
+        damage:
+          types:
+            Blunt: 50
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentCondition
+          reagent: Burzium
+          min: 50
+        reagent: Burzium
+        amount: -100
+
+- type: reagent
+  id: Spinnerine
+  name: reagent-name-moff-spinnerine
+  group: Toxins
+  desc: reagent-desc-moff-spinnerine
+  flavor: bitter
+  color: "#1111DD"
+  physicalDesc: reagent-physical-desc-opaque
+  contrabandSeverity: Major
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.5
+      effects:
+      #   Non-Arachnid Tick Effects
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Arachnid ]
+          inverted: true
+        damage:
+          types:
+            Poison: 0.3
+      - !type:SatiateHunger
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Arachnid ]
+          inverted: true
+        factor: -1
+      #   Arachnid Tick Effects
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Arachnid ]
+        - !type:HungerCondition
+          max: 40
+        damage:
+          types:
+            Poison: 3
+      - !type:SpawnEntity
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Arachnid ]
+        - !type:HungerCondition
+          min: 5
+        entity: MaterialWebSilk1
+      - !type:SatiateHunger
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Arachnid ]
+        factor: -6 # 4 for the silk, and 2 for good measure
+
+#LETS GO GAMBLING!!!
+- type: reagent
+  id: AvaliToxin
+  name: reagent-name-moff-avalitoxin
+  group: Toxins
+  desc: reagent-desc-moff-avalitoxin
+  flavor: bitter
+  color: "#FFFFFF"
+  physicalDesc: reagent-physical-desc-opaque
+  contrabandSeverity: Major
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 1
+      effects:
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Avali ]
+        effectProto: StatusEffectBlindness
+        type: Add
+        time: 3
+        probability: 0.05
+      - !type:ModifyKnockdown
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Avali ]
+        type: Add
+        time: 3
+        probability: 0.05
+      - !type:AdjustReagent #not sure how to make it go through non-avali's quicker, or other ways of making it go through avali's slower
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Avali ]
+        reagent: AvaliToxin
+        amount: 0.80
+      - !type:Electrocute
+        electrocuteTime: 1
+        probability: 0.05
